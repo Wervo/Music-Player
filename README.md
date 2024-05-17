@@ -14,8 +14,8 @@ Users can interact with the music by playing, pausing, skipping, previous, and m
 
 ## Screenshots
 
-<image src="song 1.jpg">
-<image src="song 2.jpg>
+<img src="images/song 1.jpg">
+<img src="images/song 2.jpeg">
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ Users can interact with the music by playing, pausing, skipping, previous, and m
 
 ## Installation
 
-Click on the netlify link, and it will bring up the website of the project. 
+Click on the netlify link, and it will bring up the website of the project. https://main--music-player-fromjonah.netlify.app/
 
 ## Learned
 
@@ -34,5 +34,3 @@ This is by far the most difficult project that I have faced, it is different fro
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
