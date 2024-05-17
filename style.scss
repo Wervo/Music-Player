@@ -8,6 +8,8 @@
 body{
     font-family: "Inter", sans-serif;
     background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +21,7 @@ body{
 .music-image{
     img{
         width:100%;
-        max-width:250px;
+        max-width:300px;
         border-radius: 13px;
     }
 }
@@ -28,9 +30,11 @@ body{
     display:flex;
     flex-direction: column;
     gap:0.3rem;
-    background-color: #212936;
+    background-color: #1e2633bf;
     padding:20px;
     border-radius: 13px;
+    min-width:300px;
+    width:20%;
 
     p{
         color:#E5E7EB;
@@ -72,7 +76,7 @@ body{
             -webkit-appearance: none;
             width:0px;
             height:4px;
-            box-shadow:-430px 0 0 430px #C93B76;
+            box-shadow:-430px 0 0 430px #e74387;
         }
     }
 }
@@ -82,15 +86,34 @@ body{
     align-items: center;
     justify-content:center;
     gap:1rem;
-    margin-top:15px;
-
+    margin-top:15px; 
+    
     img{
         cursor: pointer;
     }
 
-    img:nth-child(2){
+    .play{
        background-color: #C93B76;
+       box-shadow:0 0 5px 1px #C93B76;
        padding:5px;
        border-radius:50%;
-    }   
+       display: flex;
+       &
+       img{
+
+            width:33px;
+       }
+    }
+
+    .pause{
+        background-color: #C93B76;
+            padding:14px;
+            border-radius:50%;
+            display:none;
+        &
+        img{
+            
+            width:15px;
+        }
+    }
 }

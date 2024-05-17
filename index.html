@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
     <title>Music Player</title>
 </head>
 <body>
     <div class="container">
         <div class="music-image">
-            <img src="images/cover-1.png">
+            <img id="image-cover" src="images/cover-1.png">
         </div>
-        <p>Lost in the City Lights</p>
-        <span>Cosmo Sheldrake</span>
+        <p id="music-title">Lost in the City Lights</p>
+        <span id="author-name">Cosmo Sheldrake</span>
 
         <div class="progress">
             <div class="progress-number">
-                <span>00:00</span>
-                <span>03:15</span>
+                <span id="music-beginning-number">00:00</span>
+                <span id="music-end-number">01:12</span>
             </div>
             <div class="progress-bar">
                 <input type="range" id="progress">
             </div>
+            <audio id="audio-music" src="music/lost-in-city-lights-145038.mp3"></src></audio>
         </div>
 
         <div class="music-buttons">
-            <img src="images/Stop_and_play_fill-1.svg">
-            <img src="images/Play_fill.svg">
-            <img src="images/Stop_and_play_fill.svg">
+            <img id="backward-music" src="images/Stop_and_play_fill-1.svg">
+            <div class="play"><img id="play" src="images/Play_fill.svg"></div> <div class="pause"><img id="pause" src="images/pause-1006-svgrepo-com (1).svg"></div>
+            <img id="forward-music" src="images/Stop_and_play_fill.svg">
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
